@@ -3,6 +3,7 @@ const {
   getAllBooksHandler,
   getBookByIdHandler,
   editBookByIdHandler,
+  deleteBookByIdHandler,
   // getBookByIdHandler,
   // editBookByIdHandler,
   // deleteBookByIdHandler,
@@ -29,11 +30,11 @@ const routes = [
     path: "/books/{id}",
     handler: editBookByIdHandler,
   },
-  // {
-  //   method: "DELETE",
-  //   path: "/books/{id}",
-  //   handler: deleteBookByIdHandler,
-  // },
+  {
+    method: "DELETE",
+    path: "/books/{id}",
+    handler: deleteBookByIdHandler,
+  },
 ];
 
 module.exports = routes;
