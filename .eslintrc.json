@@ -9,8 +9,6 @@
     "ecmaVersion": 12
   },
   "rules": {
-    "linebreak-style": 0,
-    "no-console": "off",
-    "quotes": "off"
+    "linebreak-style": ["error", "windows"]
   }
 }
